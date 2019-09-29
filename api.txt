@@ -1,8 +1,33 @@
 apis :
 
- 1) url/user/signUp 
-
+ 1) url/user/signUp (POST)
 	inputs : name , password , email 
 	
-2) url/user/login
+2) url/user/login  (POST)
 	inous : email , passwrod
+
+	**** nest all apis herader will containg x-access-token to authenticate user ***
+
+3) url/api/home/uploadImage  (POST)
+	inputs : x-access-token in herader , picture
+
+
+4) url/api/home/blockUser  (POST)
+	inputs : x-access-token in herader , second_user_id in body
+
+	
+5) url/api/home/unblockUser  (POST)
+	inputs : x-access-token in herader , second_user_id in body
+
+6) url/api/home/likeUnlike  (POST)
+	inputs : x-access-token in herader , image_id
+
+7) url/api/home/superLikeUnlike  (POST)
+	inputs : x-access-token in herader , image_id
+
+
+
+8) url/api/home/getHomepage  (POST)
+	inputs : x-access-token in herader 
+
+
