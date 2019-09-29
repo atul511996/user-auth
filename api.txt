@@ -1,0 +1,8 @@
+apis :
+
+ 1) url/user/signUp 
+
+	inputs : name , password , email 
+	
+2) url/user/login
+	inous : email , passwrod
